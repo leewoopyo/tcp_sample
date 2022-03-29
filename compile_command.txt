@@ -1,0 +1,2 @@
+1. javac tcp_server\TcpServer.java -encoding UTF-8
+2. javac tcp_client\TcpClient.java -encoding UTF-8

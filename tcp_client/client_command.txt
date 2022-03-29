@@ -1,0 +1,5 @@
+## java TcpClient args[0](String or Binary)
+
+1. java TcpClient String
+2. java TcpClient Binary
+
