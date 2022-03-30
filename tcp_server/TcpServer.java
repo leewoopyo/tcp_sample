@@ -11,6 +11,7 @@ import java.net.Socket;
  */
 public class TcpServer {
 
+    // 서버 포트
     private static final int TCP_SVR_PORT = 11111 ;
 
     private class Worker extends Thread {
@@ -125,9 +126,14 @@ public class TcpServer {
 
     }
 
+    /**
+     * main 메소드 실행
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("Hello World!!!");
         try {
+            //서버 인스턴스 실행
             new TcpServer();
         } catch (Exception e) {
             e.printStackTrace();
