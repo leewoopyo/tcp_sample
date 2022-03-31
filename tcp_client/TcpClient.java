@@ -3,7 +3,6 @@ import java.io.DataOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
-import java.util.Objects;
 
 /**
  * TcpClient
@@ -131,7 +130,7 @@ public class TcpClient {
                 int length = dis.readInt();
                 System.out.println("[Tcp_Client] 1. read length : [" + length + "]");
 
-                // 2-3. TcpServer로부터 echoMsg를 
+                // 2-3. TcpServer로부터 echoMsg를 받음
                 if (length > 0) {
                     byte[] readMsg = new byte[length];
                     dis.readFully(readMsg, 0, length);
